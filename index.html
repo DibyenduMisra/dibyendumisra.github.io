@@ -4,44 +4,120 @@
   <title>Dibyendu Misra</title>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      height: 100vh;
+      font-family: "Times New Roman", serif;
+      color: white;
+    }
 
+    /* SECTION 1 (Landing) */
+    .hero {
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
 
-      /* NASA Background Image */
       background: url('https://images-assets.nasa.gov/image/art002e009571/art002e009571~orig.jpg') no-repeat center center/cover;
     }
 
     .name {
-      font-family: "Bookman Old Style", serif;
       font-size: 90px;
       font-weight: bold;
       color: #FFD700;
       margin: 0;
-      text-shadow: 2px 2px 10px black; /* improves visibility */
+      text-shadow: 2px 2px 10px black;
     }
 
     .subtitle {
       font-size: 28px;
       color: #00FFFF;
       margin-top: 10px;
-      letter-spacing: 2px;
       text-shadow: 1px 1px 8px black;
+    }
+
+    .scroll-btn {
+      margin-top: 30px;
+      display: inline-block;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 10px 20px;
+    }
+
+    /* SECTION 2 (Publications) */
+    .section {
+      background: white;
+      color: black;
+      padding: 60px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 1px solid black;
+      padding-bottom: 5px;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 
 <body>
 
-<div>
-  <h1 class="name">Dibyendu Misra</h1>
-  <p class="subtitle">Aspiring Planetary Scientist</p>
+<!-- HERO SECTION -->
+<div class="hero">
+  <div>
+    <h1 class="name">Dibyendu Misra</h1>
+    <p class="subtitle">Aspiring Planetary Scientist</p>
+
+    <a href="#publications" class="scroll-btn">View Publications ↓</a>
+  </div>
+</div>
+
+<!-- PUBLICATIONS SECTION -->
+<div id="publications" class="section">
+
+<h2>Publications</h2>
+
+<h3>Refereed Journals</h3>
+<ol reversed>
+  <li>Durga Prasad et al. (2024) – Chandrayaan-3 Alternate Landing Site. <i>Current Science</i>.</li>
+  <li>Sathyan et al. (2024) – Lunar south pole landing sites. <i>Icarus</i>.</li>
+  <li>Durga Prasad et al. (2023) – Chandrayaan-3 landing site study. <i>MNRAS Letters</i>.</li>
+</ol>
+
+<h3>Conference Proceedings</h3>
+<ol reversed>
+  <li>Arnaut et al. (2025) – EPSC-DPS.</li>
+  <li>Misra et al. (2025) – LPI.</li>
+  <li>Misra et al. (2024) – EPSC.</li>
+  <li>Wöhler et al. (2024) – EPSC.</li>
+  <li>Misra et al. (2024) – LPI.</li>
+</ol>
+
+<h3>Conference Presentations</h3>
+<ol reversed>
+  <li>Indian Planetary Science Conference (2025)</li>
+  <li>Symposium on Meteoroids (2024)</li>
+  <li>National Space Science Symposium (2024)</li>
+  <li>International Conference on Planets (2024)</li>
+  <li>Symposium on Meteoroids (2023)</li>
+  <li>Indian Planetary Science Conference (2023)</li>
+</ol>
+
+<h3>Accepted (In Press)</h3>
+<ol reversed>
+  <li>Misra et al. (2026) – Planetary Science Journal</li>
+</ol>
+
 </div>
 
 </body>
