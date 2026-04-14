@@ -14,21 +14,11 @@
     body {
       margin: 0;
       font-family: "Times New Roman", serif;
-      background: #f2f4f8; /* KEEP LIGHT OUTSIDE */
+      background: #f2f4f8;
       color: #111;
     }
 
-    /* LINKS (GLOBAL = BLUE HYPERLINK STYLE) */
-    a {
-      color: #0b63c7;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* HERO (UNCHANGED) */
+    /* HERO */
     .hero {
       height: 100vh;
       display: flex;
@@ -53,9 +43,7 @@
       text-shadow: 1px 1px 8px black;
     }
 
-    /* =========================
-       DARK GLASS SECTION ONLY
-       ========================= */
+    /* DARK GLASS SECTION */
     .glass-card {
       display: flex;
       gap: 40px;
@@ -102,7 +90,7 @@
       color: #d8d8d8;
     }
 
-    /* CONTACT LINES */
+    /* CONTACT */
     .contact-line {
       margin-bottom: 10px;
       color: #d8d8d8;
@@ -111,17 +99,37 @@
 
     .contact-line i {
       margin-right: 8px;
-      color: #4da3ff;
     }
 
-    /* ENSURE LINKS LOOK NORMAL BLUE */
+    /* LINKS (WHITE as requested) */
     .glass-text a {
-      color: #0b63c7;
+      color: #ffffff;
       text-decoration: none;
     }
 
     .glass-text a:hover {
       text-decoration: underline;
+    }
+
+    /* ICON COLORS */
+    .orcid {
+      color: #A6CE39;
+    }
+
+    .researchgate {
+      color: #00CCBB;
+    }
+
+    .scholar {
+      background: linear-gradient(
+        90deg,
+        #4285F4,
+        #DB4437,
+        #F4B400,
+        #0F9D58
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   </style>
 </head>
@@ -136,7 +144,7 @@
   </div>
 </div>
 
-<!-- DARK GLASS ABOUT SECTION -->
+<!-- ABOUT SECTION -->
 <div class="glass-card">
 
   <!-- LEFT PHOTO -->
@@ -188,21 +196,23 @@
     <h3>Research Profiles</h3>
 
     <div class="contact-line">
-      <i class="fa-brands fa-orcid"></i>
+      <i class="fa-brands fa-orcid orcid"></i>
       <a href="https://orcid.org/0009-0009-1031-8585" target="_blank">ORCID</a>
     </div>
 
     <div class="contact-line">
-      <i class="fa-brands fa-google"></i>
+      <i class="fa-brands fa-google scholar"></i>
       <a href="https://scholar.google.com/citations?user=ks78sUAAAAAJ&hl=en" target="_blank">Google Scholar</a>
     </div>
 
     <div class="contact-line">
-      <i class="fa-solid fa-flask"></i>
+      <i class="fa-solid fa-flask researchgate"></i>
       <a href="https://www.researchgate.net/profile/Dibyendu-Misra" target="_blank">ResearchGate</a>
     </div>
 
   </div>
+
+</div>
 
 </div>
     
