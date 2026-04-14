@@ -132,85 +132,86 @@
       -webkit-text-fill-color: transparent;
     }
     
-    /* ===== PUBLICATION SECTION (NASA WHITE MODERN STYLE) ===== */
+    /* ===== MODERN PUBLICATION PAGE (NASA STYLE) ===== */
     
-    .publication-section {
+    .container {
       max-width: 1000px;
       margin: 80px auto;
       padding: 0 20px;
-      background: #fff;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #ffffff;
       color: #111;
-      line-height: 1.7;
     }
     
-    /* SECTION HEADINGS */
-    .publication-section h2 {
-      font-size: 34px;
+    /* MAIN TITLE */
+    .container h2 {
+      font-size: 36px;
+      margin-bottom: 25px;
+      border-left: 5px solid #1a73e8;
+      padding-left: 12px;
+      color: #111;
+    }
+    
+    /* SUB TITLE */
+    .container h3 {
+      font-size: 26px;
+      margin-top: 60px;
       margin-bottom: 20px;
       border-left: 5px solid #1a73e8;
       padding-left: 12px;
       color: #111;
     }
     
-    .publication-section h3 {
-      margin-top: 50px;
-      font-size: 26px;
-      border-left: 5px solid #1a73e8;
-      padding-left: 12px;
-      color: #111;
-    }
-    
     /* LIST RESET */
-    .pub-list,
-    .conf-list,
-    .conf-attended {
+    .container ol {
       padding-left: 20px;
     }
     
-    /* CARD STYLE LIST ITEMS */
-    .pub-list li,
-    .conf-list li,
-    .conf-attended li {
+    /* PUBLICATION CARDS */
+    .container li {
+      list-style-position: outside;
       margin-bottom: 22px;
-      padding: 14px 16px;
-      border-radius: 10px;
-      transition: 0.2s ease;
+      padding: 16px 18px;
+      border-radius: 12px;
       line-height: 1.7;
+      transition: all 0.25s ease;
+      background: #fff;
+      border: 1px solid transparent;
     }
     
-    /* HOVER EFFECT (NASA FEEL) */
-    .pub-list li:hover,
-    .conf-list li:hover,
-    .conf-attended li:hover {
+    /* HOVER EFFECT (NASA STYLE CARD) */
+    .container li:hover {
       background: #f5f9ff;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      border: 1px solid #d6e6ff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
     }
     
-    /* LINKS (BLUE, CLEAN, NO UNDERLINE) */
-    .publication-section a {
+    /* LINKS (NO UNDERLINE ALWAYS) */
+    .container a {
       color: #1a73e8;
       text-decoration: none;
       font-weight: 500;
     }
     
-    .publication-section a:hover {
+    .container a:hover {
       text-decoration: underline;
     }
     
-    /* JOURNAL / VENUE STYLE */
-    .publication-section i {
+    /* JOURNAL NAME */
+    .container i {
       color: #444;
+      font-style: italic;
     }
     
-    /* AUTHOR EMPHASIS */
-    .publication-section b {
+    /* AUTHORS EMPHASIS */
+    .container b {
       color: #000;
     }
     
-    /* OPTIONAL NICE TYPING FEEL */
-    .conf-name {
-      font-style: italic;
-      color: #444;
+    /* NICE SPACING BETWEEN SECTIONS */
+    .container ol + h3 {
+      margin-top: 70px;
     }
   </style>
 </head>
