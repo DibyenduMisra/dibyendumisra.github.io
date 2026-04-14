@@ -3,6 +3,9 @@
 <head>
   <title>Dibyendu Misra</title>
 
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     html {
       scroll-behavior: smooth;
@@ -11,11 +14,12 @@
     body {
       margin: 0;
       font-family: "Times New Roman", serif;
-      color: white;
+      background: #f2f4f8;
+      color: #111;
     }
 
     a {
-      color: blue;
+      color: #003366;
       text-decoration: none;
     }
 
@@ -44,144 +48,77 @@
     .subtitle {
       font-size: 28px;
       margin-top: 10px;
+      color: white;
       text-shadow: 1px 1px 8px black;
     }
 
-    /* SECTION */
-    .section {
-      background: white;
-      color: black;
-      padding: 60px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      border-bottom: 1px solid black;
-      padding-bottom: 5px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    .label {
-      font-weight: bold;
-      display: inline-block;
-      width: 180px;
-    }
-
-    .entry {
-      margin-bottom: 15px;
-    }
-        /* ===== NEW PERSONAL DETAILS STYLING ===== */
-    .info-box {
-      background: #f9f9f9;
-      border-left: 4px solid #003366;
-      padding: 20px 25px;
-      border-radius: 6px;
-    }
-  
-    .entry {
-      display: flex;
-      margin-bottom: 18px;
-    }
-  
-    .label {
-      width: 180px;
-      font-weight: bold;
-      color: #003366;
-    }
-  
-    .value {
-      flex: 1;
-      line-height: 1.6;
-    }
-  
-    .highlight {
-      color: #003366;
-      font-weight: 500;
-    }
-    .edu-item {
-    display: flex;
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e6e6e6;
-  }
-
-    .edu-item:last-child {
-      border-bottom: none;
-    }
-    
-    .edu-year {
-      width: 140px;
-      font-weight: bold;
-      color: #003366;
-    }
-    
-    .edu-content {
-      flex: 1;
-      line-height: 1.6;
-    }
-    
-    .edu-content a {
-      color: #003366;
-    }
-    .intro-section {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-    
-    .intro-container {
+    /* GLASS SECTION */
+    .glass-card {
       display: flex;
       gap: 40px;
-      align-items: flex-start;
+      max-width: 1000px;
+      margin: 80px auto;
+
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      border-radius: 18px;
+      padding: 40px;
+
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
-    
-    /* PHOTO */
+
+    /* STICKY PHOTO */
+    .intro-photo {
+      position: sticky;
+      top: 100px;
+      align-self: flex-start;
+    }
+
     .intro-photo img {
       width: 260px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
-    
+
     /* TEXT */
-    .intro-text {
+    .glass-text {
       flex: 1;
     }
-    
-    .intro-text h2 {
+
+    .glass-text h2 {
       margin-top: 0;
-      border-bottom: 2px solid #003366;
-      padding-bottom: 5px;
+      color: #003366;
     }
-    
-    .intro-text h3 {
+
+    .glass-text h3 {
       margin-top: 20px;
       color: #003366;
     }
-    
-    .intro-text ul {
-      margin-top: 5px;
-      padding-left: 20px;
+
+    .glass-text p {
+      line-height: 1.6;
     }
-    
-    .intro-text li {
-      margin-bottom: 6px;
+
+    .contact-line {
+      margin-bottom: 8px;
+      color: #222;
+      line-height: 1.6;
     }
-    .intro-text a {
+
+    .contact-line i {
+      margin-right: 8px;
       color: #003366;
-      font-weight: 500;
+    }
+
+    .glass-text a {
+      color: #003366;
       text-decoration: none;
     }
-    
-    .intro-text a:hover {
+
+    .glass-text a:hover {
       text-decoration: underline;
-    }
-    
-    .intro-text h3 {
-      margin-top: 18px;
-      color: #003366;
     }
   </style>
 </head>
@@ -196,79 +133,77 @@
   </div>
 </div>
 
-<!-- INTRO SECTION -->
-<div class="section intro-section">
+<!-- ABOUT SECTION -->
+<div class="glass-card">
 
-  <div class="intro-container">
+  <!-- LEFT PHOTO -->
+  <div class="intro-photo">
+    <img src="https://drive.google.com/thumbnail?id=18fC1DlaN467fRXDvN8Mkwgk7n523arLt&sz=w1000"
+         alt="Profile Photo">
+  </div>
 
-    <!-- LEFT: PHOTO (FIXED) -->
-    <div class="intro-photo">
-      <img src="https://drive.google.com/thumbnail?id=18fC1DlaN467fRXDvN8Mkwgk7n523arLt&sz=w1000" 
-           alt="Profile Photo">
+  <!-- RIGHT CONTENT -->
+  <div class="glass-text">
+
+    <h2>About Me</h2>
+
+    <p>
+      I am an aspiring <b>Planetary Scientist</b> currently focused on understanding the thermal evolution of the Moon
+      through remote sensing-based global characterization of lunar pyroclastic deposits.
+    </p>
+
+    <p>
+      My research integrates <b>VIS–NIR reflectance spectroscopy</b>, radiative transfer modelling,
+      Monte Carlo simulations, and statistical inference–based spectral unmixing,
+      along with <b>telescope-based multi-band imaging polarimetry</b>,
+      to investigate the composition, physical properties, and emplacement mechanisms of lunar volcanic deposits.
+    </p>
+
+    <h3>Office Address</h3>
+    <p>Physical Research Laboratory, Ahmedabad, India</p>
+
+    <h3>Contact</h3>
+
+    <div class="contact-line">
+      <i class="fa-solid fa-envelope"></i> samratmisra.18@gmail.com
     </div>
 
- <div class="section intro-section">
-
-  <div class="intro-container">
-
-    <!-- LEFT: PHOTO -->
-    <div class="intro-photo">
-      <img src="https://drive.google.com/thumbnail?id=18fC1DlaN467fRXDvN8Mkwgk7n523arLt&sz=w1000" 
-           alt="Profile Photo">
+    <div class="contact-line">
+      <i class="fa-solid fa-envelope"></i> dibyendu@prl.res.in
     </div>
 
-    <!-- RIGHT: CONTENT -->
-    <div class="intro-text">
+    <div class="contact-line">
+      <i class="fa-solid fa-envelope"></i> misradibyendu@iitgn.ac.in
+    </div>
 
-      <h2>About Me</h2>
+    <div class="contact-line">
+      <i class="fa-solid fa-phone"></i> +91 79 2631 4532 (Office)
+    </div>
 
-      <p>
-        I am an aspiring <b>Planetary Scientist</b> currently focused on understanding the thermal evolution of the Moon
-        through remote sensing-based global characterization of lunar pyroclastic deposits.
-      </p>
+    <div class="contact-line">
+      <i class="fa-solid fa-mobile-screen"></i> +91 8637527590 (Mobile)
+    </div>
 
-      <p>
-        My research integrates <b>VIS–NIR reflectance spectroscopy</b>, radiative transfer modelling, Monte Carlo simulations,
-        and statistical inference–based spectral unmixing, along with <b>telescope-based multi-band imaging polarimetry</b>,
-        to investigate the composition, physical properties, and emplacement mechanisms of lunar explosive volcanic deposits.
-      </p>
+    <h3>Research Profiles</h3>
 
-      <!-- OFFICE ADDRESS -->
-      <h3>Office Address</h3>
-      <p>
-        📍 Planetary Sciences Division, Physical Research Laboratory,<br>
-        Ahmedabad, Gujarat, India
-      </p>
+    <div class="contact-line">
+      <i class="fa-brands fa-orcid"></i>
+      <a href="https://orcid.org/0009-0009-1031-8585" target="_blank">ORCID</a>
+    </div>
 
-      <!-- CONTACT -->
-      <h3>Contact</h3>
+    <div class="contact-line">
+      <i class="fa-brands fa-google"></i>
+      <a href="https://scholar.google.com/citations?user=ks78sUAAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    </div>
 
-      <p>
-        📧 <a href="mailto:samratmisra.18@gmail.com">samratmisra.18@gmail.com</a><br>
-        📧 <a href="mailto:dibyendu@prl.res.in">dibyendu@prl.res.in</a><br>
-        📧 <a href="mailto:misradibyendu@iitgn.ac.in">misradibyendu@iitgn.ac.in</a>
-      </p>
-
-      <p>
-        📞 +91 79 2631 4532 (Office)<br>
-        📱 +91 8637527590 (Mobile)
-      </p>
-
-      <!-- RESEARCH PROFILES -->
-      <h3>Research Profiles</h3>
-
-      <p>
-        <a href="https://orcid.org/0009-0009-1031-8585" target="_blank">🟢 ORCID</a><br>
-        <a href="https://scholar.google.com/citations?user=ks78sUAAAAAJ&hl=en" target="_blank">🔵 Google Scholar</a><br>
-        <a href="https://www.researchgate.net/profile/Dibyendu-Misra" target="_blank">🟣 ResearchGate</a>
-      </p>
-
+    <div class="contact-line">
+      <i class="fa-solid fa-flask"></i>
+      <a href="https://www.researchgate.net/profile/Dibyendu-Misra" target="_blank">ResearchGate</a>
     </div>
 
   </div>
 
 </div>
-
     
 <!-- PUBLICATIONS -->
 <div id="publications" class="section">
