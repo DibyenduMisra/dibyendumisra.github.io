@@ -14,12 +14,13 @@
     body {
       margin: 0;
       font-family: "Times New Roman", serif;
-      background: #f2f4f8;
+      background: #f2f4f8; /* KEEP LIGHT OUTSIDE */
       color: #111;
     }
 
+    /* LINKS (GLOBAL = BLUE HYPERLINK STYLE) */
     a {
-      color: #003366;
+      color: #0b63c7;
       text-decoration: none;
     }
 
@@ -27,7 +28,7 @@
       text-decoration: underline;
     }
 
-    /* HERO */
+    /* HERO (UNCHANGED) */
     .hero {
       height: 100vh;
       display: flex;
@@ -40,7 +41,7 @@
     .name {
       font-size: 90px;
       font-weight: bold;
-      color: #FFD700;
+      color: #FFD86B;
       margin: 0;
       text-shadow: 2px 2px 10px black;
     }
@@ -52,49 +53,73 @@
       text-shadow: 1px 1px 8px black;
     }
 
-    /* GLASS SECTION (DARK ONLY) */
+    /* =========================
+       DARK GLASS SECTION ONLY
+       ========================= */
     .glass-card {
       display: flex;
       gap: 40px;
       max-width: 1000px;
       margin: 80px auto;
-    
-      background: rgba(18, 22, 35, 0.72);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    
-      border-radius: 18px;
+
+      background: rgba(15, 18, 30, 0.88);
+      border: 1px solid rgba(255,255,255,0.08);
+
+      border-radius: 16px;
       padding: 40px;
-    
-      box-shadow: 0 10px 35px rgba(0,0,0,0.6);
+
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    }
+
+    /* PHOTO */
+    .intro-photo {
+      position: sticky;
+      top: 100px;
+      align-self: flex-start;
+    }
+
+    .intro-photo img {
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
       border: 1px solid rgba(255,255,255,0.08);
     }
-    
+
     /* TEXT */
+    .glass-text {
+      flex: 1;
+      color: #e6e6e6;
+    }
+
     .glass-text h2,
     .glass-text h3 {
-      color: #7ab7ff;
+      color: #4da3ff;
+      margin-top: 18px;
     }
-    
+
     .glass-text p {
-      color: #d6d6d6;
+      line-height: 1.6;
+      color: #d8d8d8;
+    }
+
+    /* CONTACT LINES */
+    .contact-line {
+      margin-bottom: 10px;
+      color: #d8d8d8;
       line-height: 1.6;
     }
-    
-    /* CONTACT */
-    .contact-line {
-      color: #d6d6d6;
-    }
-    
+
     .contact-line i {
-      color: #7ab7ff;
+      margin-right: 8px;
+      color: #4da3ff;
     }
-    
-    /* LINKS */
+
+    /* ENSURE LINKS LOOK NORMAL BLUE */
     .glass-text a {
-      color: #7ab7ff;
+      color: #0b63c7;
+      text-decoration: none;
     }
-    
+
     .glass-text a:hover {
       text-decoration: underline;
     }
@@ -111,7 +136,7 @@
   </div>
 </div>
 
-<!-- ABOUT SECTION -->
+<!-- DARK GLASS ABOUT SECTION -->
 <div class="glass-card">
 
   <!-- LEFT PHOTO -->
@@ -126,7 +151,7 @@
     <h2>About Me</h2>
 
     <p>
-      I am an aspiring <b>Planetary Scientist</b> currently focused on understanding the thermal evolution of the Moon
+      I am an aspiring <b>Planetary Scientist</b> focused on understanding the thermal evolution of the Moon
       through remote sensing-based global characterization of lunar pyroclastic deposits.
     </p>
 
@@ -134,26 +159,30 @@
       My research integrates <b>VIS–NIR reflectance spectroscopy</b>, radiative transfer modelling,
       Monte Carlo simulations, and statistical inference–based spectral unmixing,
       along with <b>telescope-based multi-band imaging polarimetry</b>,
-      to investigate the composition, physical properties, and emplacement mechanisms of lunar volcanic deposits.
+      to investigate lunar volcanic deposits.
     </p>
 
     <h3>Office Address</h3>
-    <p>Room no. 032, Mars Environment Chamber (MEC) Lab, 
-      Old Canteen Building, Planetary Sciences Division, 
-      Physical Research Laboratory, Thaltej Campus, Ahmedabad, Gujarat, 380058, India.</p>
+    <p>
+      Room no. 032, Mars Environment Chamber (MEC) Lab,<br>
+      Physical Research Laboratory, Ahmedabad, Gujarat, India.
+    </p>
 
     <h3>Contact</h3>
 
     <div class="contact-line">
-      <i class="fa-solid fa-envelope"></i> samratmisra.18@gmail.com, dibyendu@prl.res.in, misradibyendu@iitgn.ac.in
+      <i class="fa-solid fa-envelope"></i>
+      samratmisra.18@gmail.com, dibyendu@prl.res.in, misradibyendu@iitgn.ac.in
     </div>
 
     <div class="contact-line">
-      <i class="fa-solid fa-phone"></i> +91 79 2631 4532
+      <i class="fa-solid fa-phone"></i>
+      +91 79 2631 4532
     </div>
 
     <div class="contact-line">
-      <i class="fa-solid fa-mobile-screen"></i> +91 8637527590
+      <i class="fa-solid fa-mobile-screen"></i>
+      +91 8637527590
     </div>
 
     <h3>Research Profiles</h3>
