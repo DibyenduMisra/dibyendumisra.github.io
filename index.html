@@ -225,6 +225,107 @@
     .container br {
       line-height: 1.2;
     }
+    /* ===== DARK MODE ONLY FOR CONFERENCE PAGE ===== */
+    
+    .conf-dark {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 25px 20px;
+    
+      background: #0b0f19;
+      color: #eaeaea;
+    
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    
+      font-family: "Times New Roman", Times, serif;
+    }
+    
+    /* HEADINGS */
+    .conf-dark h2,
+    .conf-dark h3 {
+      color: #ffffff;
+      border-left: 5px solid #1a73e8;
+      padding-left: 12px;
+    }
+    
+    /* LIST CLEAN */
+    .conf-dark ol {
+      padding-left: 18px;
+      margin: 0;
+    }
+    
+    /* ITEMS (COMPACT NASA STYLE) */
+    .conf-dark li {
+      margin-bottom: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      line-height: 1.6;
+    
+      background: rgba(255,255,255,0.03);
+      transition: 0.2s ease;
+    }
+    
+    .conf-dark li:hover {
+      background: rgba(26,115,232,0.12);
+      transform: translateY(-1px);
+    }
+    
+    /* LINKS (BLUE ONLY) */
+    .conf-dark a,
+    .conf-dark a:visited {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+    
+    .conf-dark a:hover {
+      text-decoration: underline;
+    }
+    
+    /* ORAL / POSTER COLORS FIX */
+    .conf-dark b[style*="magenta"] {
+      color: #ff4dd2 !important;
+      font-weight: 700;
+    }
+    
+    .conf-dark b[style*="blue"] {
+      color: #4da3ff !important;
+      font-weight: 700;
+    }
+    
+    /* EMPLOYMENT SECTION */
+    .conf-dark .info-box {
+      margin-top: 20px;
+    }
+    
+    .conf-dark .edu-item {
+      display: flex;
+      gap: 20px;
+      padding: 14px 12px;
+      margin-bottom: 12px;
+    
+      background: rgba(255,255,255,0.03);
+      border-radius: 10px;
+    }
+    
+    .conf-dark .edu-year {
+      min-width: 160px;
+      color: #4da3ff;
+      font-weight: 600;
+    }
+    
+    .conf-dark .edu-content {
+      color: #eaeaea;
+    }
+    
+    .conf-dark .edu-content a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+    
+    .conf-dark .edu-content a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -402,6 +503,69 @@
 
 </div>
 
+<div class="conf-dark">
+
+<h2>Conference Attended</h2>
+
+<ol>
+
+<li>
+<b style="color:magenta;">Oral</b> presentation on 
+<i>Geo-chemical insights from newly detected lunar pyroclastic deposits</i> 
+in the 7th Indian Planetary Science Conference (March 23–25, 2026) at Indian Institute of Technology Indore, Indore, India.
+</li>
+
+<li>
+<b style="color:blue;">Poster</b> presentation on 
+<i>A novel method for detection and characterization of lunar pyroclastic deposits</i> 
+in the 23rd National Space Science Symposium (February 23–27, 2026) at North-Eastern Space Applications Centre, Umiam, Shillong, Meghalaya, India.
+</li>
+
+<li>
+<b style="color:blue;">Poster</b> presentation on 
+<i>Characterization of Lunar Pyroclastic Deposits</i> 
+in 6th Indian Planetary Science Conference (March 04–07, 2025) at Indian Institute of Technology Roorkee, Roorkee, India.
+</li>
+
+<li>
+<b style="color:blue;">Poster</b> presentation on 
+<i>Lunar Pyroclastics: A novel way of detection, characterization and validation</i> 
+in 4th Symposium on Meteoroids, Meteors, and Meteorites: Messengers from Space (November 20–22, 2024) at Physical Research Laboratory, Ahmedabad, Gujarat, India.
+</li>
+
+<li>
+<b style="color:magenta;">Oral</b> presentation on 
+<i>Towards understanding spectral and physical characteristics of lunar pyroclastics</i> 
+in Europlanet Science Congress (September 8–13, 2024) at Freie Universität Berlin, Germany.
+</li>
+
+<li>
+<b style="color:blue;">Poster</b> presentation on 
+<i>Characterization of lunar dark mantle deposits around Aristarchus crater</i> 
+in 22nd National Space Science Symposium (February 26–March 1, 2024) at Goa University, Goa, India.
+</li>
+
+<li>
+<b style="color:magenta;">Oral</b> presentation on 
+<i>Integrated comparative study between lunar regional pyroclastic deposits</i> 
+in International Conference on Planets, Exoplanets, and Habitability (February 5–9, 2024) at Physical Research Laboratory, Ahmedabad, Gujarat, India.
+</li>
+
+<li>
+<b style="color:blue;">Poster</b> presentation on 
+<i>Lunar Volcanic Glasses: Compositional Analysis of Lunar Dark Mantle Deposits</i> 
+in 3rd Symposium on Meteoroids, Meteors, and Meteorites: Messengers from Space (November 1–3, 2023) at Physical Research Laboratory, Ahmedabad, Gujarat, India.
+</li>
+
+<li>
+<b style="color:blue;">Poster</b> presentation on 
+<i>Geological Significance for the occurrence of OH/H₂O in the Clavius Crater Region</i> 
+in 4th Indian Planetary Science Conference (March 22–24, 2023) at Physical Research Laboratory, Ahmedabad, Gujarat, India.
+</li>
+
+</ol>
+
+</div>
   
 <!-- PUBLICATIONS -->
 <div id="publications" class="section">
@@ -464,95 +628,6 @@
   </div>
 
 </div>
-  
-<h2>Publications</h2>
-
-<ol>
-
-<li>
-<b>Dibyendu Misra</b>, Megha Bhatt, Marcel Hess, Christian Wöhler (2026).
-An Integrated Framework for Global Detection and Quantification of Lunar Pyroclastic Deposits.
-<a href="https://iopscience.iop.org/article/10.3847/PSJ/ae317c" target="_blank">
-<i>The Planetary Science Journal</i>
-</a>.
-</li>
-
-<li>
-K Durga Prasad, <b>Dibyendu Misra</b>, Megha Bhatt, Amitabh, G Ambily, Sachana Sathyan, Neeraj Srivastava, and Anil Bhardwaj (2024).
-Chandrayaan-3 Alternate Landing Site: Pre-Landing Characterisation.
-<a href="https://www.currentscience.ac.in/Volumes/126/07/0774.pdf" target="_blank">
-<i>Current Science</i>
-</a>.
-</li>
-
-<li>
-Sachana Sathyan, Megha Bhatt, Monalisa Chowdhury, Philipp Gläser, <b>Dibyendu Misra</b>, Neeraj Srivastava, Shyama Narendranath, KS Sajinkumar, and Anil Bhardwaj (2024).
-Potential landing sites characterization on lunar south pole.
-<a href="https://doi.org/10.1016/j.icarus.2024.115988" target="_blank">
-<i>Icarus</i>
-</a>.
-</li>
-
-<li>
-K Durga Prasad, Megha Bhatt, Amitabh, G Ambily, Sachana Sathyan, <b>Dibyendu Misra</b>, Neeraj Srivastava, and Anil Bhardwaj (2023).
-Contextual characterization study of Chandrayaan-3 primary landing site.
-<a href="https://doi.org/10.1093/mnrasl/slad106" target="_blank">
-<i>Monthly Notices of the Royal Astronomical Society: Letters</i>
-</a>.
-</li>
-
-</ol>
-
-</ol>
-
-<h3>Conference Proceedings</h3>
-
-<ol>
-
-<li>
-Arnaut, M., Wöhler, C., <b>Misra, D.</b>, Bhatt, M., & Ganesh, S. (2025).
-The Moon as an Asteroid: Unlocking Surface Secrets with Atlas Polarimetry.
-<i>Copernicus Meetings</i>.
-<a href="https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-1232" target="_blank">
-EPSC-DPS2025-1232
-</a>
-</li>
-
-<li>
-<b>Misra, D.</b>, Bhatt, M., Wöhler, C., Srivastava, N., & Bhardwaj, A. (2025).
-Characterization of a Plausible Lunar Pyroclastic Deposit at the Mare-Highland Boundary of Near Western Side.
-<i>56th Lunar and Planetary Science Conference</i>.
-<a href="https://www.hou.usra.edu/meetings/lpsc2025/pdf/2309" target="_blank">
-LPI Contribution No. 3090, 2309
-</a>
-</li>
-
-<li>
-<b>Misra, D.</b>, Bhatt, M., Wöhler, C., Arnaut, M., Rai, N., Srivastava, N., Ganesh, S., & Bhardwaj, A. (2024).
-Towards understanding spectral and physical characteristics of lunar pyroclastics.
-<i>Europlanet Science Congress 2024</i>.
-<a href="https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-1085" target="_blank">
-EPSC2024-1085
-</a>
-</li>
-
-<li>
-Wöhler, C., Bhatt, M., Arnaut, M., <b>Misra, D.</b>, Ganesh, S., & Bhardwaj, A. (2024).
-Terrain-dependent spectral properties of lunar polarization at small phase angles.
-<i>EPSC 2024</i>.
-<a href="https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-995" target="_blank">
-EPSC2024-995
-</a>
-</li>
-
-<li>
-<b>Misra, D.</b>, Wöhler, C., Arnaut, M., & Bhatt, M. (2024).
-Comparative Study Between Local Pyroclastic Deposits at Atlas and Alphonsus Crater.
-<i>55th Lunar and Planetary Science Conference</i>.
-<a href="https://www.hou.usra.edu/meetings/lpsc2024/pdf/2134" target="_blank">
-LPI Contributions, 3040, 2134
-</a>
-</li>
 
 </ol>
 
