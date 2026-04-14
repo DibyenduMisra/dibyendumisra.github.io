@@ -138,42 +138,35 @@
 
     .container {
       max-width: 1000px;
-      margin: 80px auto;
-      padding: 40px 20px;
-      font-family: "Segoe UI", Arial, sans-serif;
-    
-      /* IMPORTANT FIX */
-      background: #ffffff;
-      border-radius: 14px;
-    
-      /* separation from grey page */
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
+      margin: 40px auto;   /* reduced from 80px */
+      padding: 25px 20px;  /* reduced from 40px */
+      font-family: "Times New Roman", Times, serif;
 
-        /* prevent weird overlap with glass section */
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    
+      position: relative;
+      z-index: 1;
+    }
+  
+
+    /* prevent weird overlap with glass section */
     .container {
       position: relative;
       z-index: 1;
     }
-    /* MAIN TITLE */
     .container h2 {
-      font-size: 36px;
-      margin-bottom: 25px;
-      border-left: 5px solid #1a73e8;
-      padding-left: 12px;
-      color: #111;
+      font-size: 34px;
+      margin-bottom: 15px;   /* reduced */
     }
     
-    /* SUB TITLE */
     .container h3 {
       font-size: 26px;
-      margin-top: 60px;
-      margin-bottom: 20px;
-      border-left: 5px solid #1a73e8;
-      padding-left: 12px;
-      color: #111;
+      margin-top: 35px;      /* reduced a lot from 60px */
+      margin-bottom: 15px;
     }
-    
+        
     /* LIST RESET */
     .container ol {
       padding-left: 20px;
@@ -181,22 +174,12 @@
     
     /* PUBLICATION CARDS */
     .container li {
-      list-style-position: outside;
-      margin-bottom: 22px;
-      padding: 16px 18px;
-      border-radius: 12px;
-      line-height: 1.7;
-      transition: all 0.25s ease;
-      background: #fff;
-      border: 1px solid transparent;
+      margin-bottom: 14px;   /* was 22px */
+      padding: 12px 14px;    /* slightly tighter */
     }
     
-    /* HOVER EFFECT (NASA STYLE CARD) */
     .container li:hover {
-      background: #f5f9ff;
-      border: 1px solid #d6e6ff;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      transform: translateY(-2px);
+      transform: translateY(-1px); /* instead of -2px */
     }
     
     /* LINKS (NO UNDERLINE ALWAYS) */
@@ -315,32 +298,33 @@
   <ol>
 
     <li>
-      <b>Dibyendu Misra</b>, Megha Bhatt, Marcel Hess, Christian Wöhler (2026).<br>
-      An Integrated Framework for Global Detection and Quantification of Lunar Pyroclastic Deposits.<br>
+      <b>Dibyendu Misra</b>, Megha Bhatt, Marcel Hess, Christian Wöhler (2026).
+      An Integrated Framework for Global Detection and Quantification of Lunar Pyroclastic Deposits.
       <a href="https://iopscience.iop.org/article/10.3847/PSJ/ae317c" target="_blank">
         <i>The Planetary Science Journal</i>
       </a>.
     </li>
 
     <li>
-      K Durga Prasad, <b>Dibyendu Misra</b>, Megha Bhatt, Amitabh, G Ambily, Sachana Sathyan, Neeraj Srivastava, and Anil Bhardwaj (2024).<br>
-      Chandrayaan-3 Alternate Landing Site: Pre-Landing Characterisation.<br>
+      K Durga Prasad, <b>Dibyendu Misra</b>, Megha Bhatt, Amitabh, G Ambily, Sachana Sathyan, Neeraj Srivastava, and Anil Bhardwaj (2024).
+      Chandrayaan-3 Alternate Landing Site: Pre-Landing Characterisation.
       <a href="https://www.currentscience.ac.in/Volumes/126/07/0774.pdf" target="_blank">
         <i>Current Science</i>
       </a>.
     </li>
 
     <li>
-      Sachana Sathyan, Megha Bhatt, Monalisa Chowdhury, Philipp Gläser, <b>Dibyendu Misra</b>, Neeraj Srivastava, Shyama Narendranath, KS Sajinkumar, and Anil Bhardwaj (2024).<br>
-      Potential landing sites characterization on lunar south pole.<br>
+      Sachana Sathyan, Megha Bhatt, Monalisa Chowdhury, Philipp Gläser, <b>Dibyendu Misra</b>, 
+      Neeraj Srivastava, Shyama Narendranath, KS Sajinkumar, and Anil Bhardwaj (2024).
+      Potential landing sites characterization on lunar south pole.
       <a href="https://doi.org/10.1016/j.icarus.2024.115988" target="_blank">
         <i>Icarus</i>
       </a>.
     </li>
 
     <li>
-      K Durga Prasad, Megha Bhatt, Amitabh, G Ambily, Sachana Sathyan, <b>Dibyendu Misra</b>, Neeraj Srivastava, and Anil Bhardwaj (2023).<br>
-      Contextual characterization study of Chandrayaan-3 primary landing site.<br>
+      K Durga Prasad, Megha Bhatt, Amitabh, G Ambily, Sachana Sathyan, <b>Dibyendu Misra</b>, Neeraj Srivastava, and Anil Bhardwaj (2023).
+      Contextual characterization study of Chandrayaan-3 primary landing site.
       <a href="https://doi.org/10.1093/mnrasl/slad106" target="_blank">
         <i>Monthly Notices of the Royal Astronomical Society: Letters</i>
       </a>.
@@ -353,47 +337,47 @@
   <ol>
 
     <li>
-      Arnaut, M., Wöhler, C., <b>Misra, D.</b>, Bhatt, M., & Ganesh, S. (2025).<br>
-      The Moon as an Asteroid: Unlocking Surface Secrets with Atlas Polarimetry.<br>
-      <i>Copernicus Meetings</i>.<br>
+      Arnaut, M., Wöhler, C., <b>Misra, D.</b>, Bhatt, M., & Ganesh, S. (2025).
+      The Moon as an Asteroid: Unlocking Surface Secrets with Atlas Polarimetry.
+      <i>Copernicus Meetings</i>.
       <a href="https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-1232" target="_blank">
-        EPSC-DPS2025-1232
+        EPSC-DPS2025-1232.
       </a>
     </li>
 
     <li>
-      <b>Misra, D.</b>, Bhatt, M., Wöhler, C., Srivastava, N., & Bhardwaj, A. (2025).<br>
-      Characterization of a Plausible Lunar Pyroclastic Deposit at the Mare-Highland Boundary.<br>
-      <i>56th Lunar and Planetary Science Conference</i>.<br>
+      <b>Misra, D.</b>, Bhatt, M., Wöhler, C., Srivastava, N., & Bhardwaj, A. (2025).
+      Characterization of a Plausible Lunar Pyroclastic Deposit at the Mare-Highland Boundary.
+      <i>56th Lunar and Planetary Science Conference</i>.
       <a href="https://www.hou.usra.edu/meetings/lpsc2025/pdf/2309" target="_blank">
-        LPI Contribution No. 3090, 2309
+        LPI Contribution No. 3090, 2309.
       </a>
     </li>
 
     <li>
-      <b>Misra, D.</b>, Bhatt, M., Wöhler, C., Arnaut, M., Rai, N., Srivastava, N., Ganesh, S., & Bhardwaj, A. (2024).<br>
-      Towards understanding spectral and physical characteristics of lunar pyroclastics.<br>
-      <i>Europlanet Science Congress 2024</i>.<br>
+      <b>Misra, D.</b>, Bhatt, M., Wöhler, C., Arnaut, M., Rai, N., Srivastava, N., Ganesh, S., & Bhardwaj, A. (2024).
+      Towards understanding spectral and physical characteristics of lunar pyroclastics.
+      <i>Europlanet Science Congress 2024</i>.
       <a href="https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-1085" target="_blank">
-        EPSC2024-1085
+        EPSC2024-1085.
       </a>
     </li>
 
     <li>
-      Wöhler, C., Bhatt, M., Arnaut, M., <b>Misra, D.</b>, Ganesh, S., & Bhardwaj, A. (2024).<br>
-      Terrain-dependent spectral properties of lunar polarization.<br>
-      <i>EPSC 2024</i>.<br>
+      Wöhler, C., Bhatt, M., Arnaut, M., <b>Misra, D.</b>, Ganesh, S., & Bhardwaj, A. (2024).
+      Terrain-dependent spectral properties of lunar polarization.
+      <i>EPSC 2024</i>.
       <a href="https://meetingorganizer.copernicus.org/EPSC2024/EPSC2024-995" target="_blank">
-        EPSC2024-995
+        EPSC2024-995.
       </a>
     </li>
 
     <li>
-      <b>Misra, D.</b>, Wöhler, C., Arnaut, M., & Bhatt, M. (2024).<br>
-      Comparative Study Between Local Pyroclastic Deposits at Atlas and Alphonsus Crater.<br>
-      <i>55th Lunar and Planetary Science Conference</i>.<br>
+      <b>Misra, D.</b>, Wöhler, C., Arnaut, M., & Bhatt, M. (2024).
+      Comparative Study Between Local Pyroclastic Deposits at Atlas and Alphonsus Crater.
+      <i>55th Lunar and Planetary Science Conference</i>.
       <a href="https://www.hou.usra.edu/meetings/lpsc2024/pdf/2134" target="_blank">
-        LPI Contributions, 3040, 2134
+        LPI Contributions, 3040, 2134.
       </a>
     </li>
 
