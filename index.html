@@ -134,6 +134,8 @@
     
     /* ===== MODERN PUBLICATION PAGE (NASA STYLE) ===== */
 
+    /* ===== MODERN PUBLICATION PAGE (GALAXY / SUPERNOVA STYLE) ===== */
+    
     .container {
       max-width: 1000px;
       margin: 40px auto;
@@ -141,20 +143,39 @@
     
       font-family: "Times New Roman", Times, serif;
     
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      /* 🌌 SPACE BACKGROUND */
+      background:
+        radial-gradient(circle at 10% 20%, rgba(120, 80, 255, 0.25), transparent 45%),
+        radial-gradient(circle at 90% 30%, rgba(0, 200, 255, 0.18), transparent 40%),
+        radial-gradient(circle at 50% 90%, rgba(255, 120, 80, 0.15), transparent 50%),
+        linear-gradient(180deg, #0b0f1a, #05060f 70%, #000000);
+    
+      border-radius: 14px;
+    
+      /* glass + glow effect */
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow:
+        0 0 25px rgba(80, 140, 255, 0.15),
+        0 0 60px rgba(255, 100, 180, 0.08);
+    
+      backdrop-filter: blur(10px);
     
       position: relative;
       z-index: 1;
+    
+      color: #eaeaea;
     }
     
     /* TITLE */
     .container h2 {
       font-size: 34px;
       margin-bottom: 12px;
-      border-left: 5px solid #1a73e8;
+    
+      border-left: 5px solid #4da3ff;
       padding-left: 12px;
+    
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(77, 163, 255, 0.4);
     }
     
     /* SUB TITLE */
@@ -162,8 +183,11 @@
       font-size: 26px;
       margin-top: 30px;
       margin-bottom: 10px;
-      border-left: 5px solid #1a73e8;
+    
+      border-left: 5px solid #4da3ff;
       padding-left: 12px;
+    
+      color: #ffffff;
     }
     
     /* LIST */
@@ -172,26 +196,31 @@
       margin: 0;
     }
     
-    /* EACH PUBLICATION (IMPORTANT FIX) */
+    /* EACH PUBLICATION */
     .container li {
-      margin-bottom: 10px;     /* 🔥 reduced gap */
-      padding: 8px 10px;       /* 🔥 tighter */
-      line-height: 1.55;       /* 🔥 compact text */
+      margin-bottom: 10px;
+      padding: 10px 12px;
+      line-height: 1.6;
+    
       border-radius: 10px;
-      transition: 0.2s ease;
+    
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    
+      transition: 0.25s ease;
     }
     
-    /* HOVER (subtle NASA feel) */
+    /* HOVER (galaxy glow) */
     .container li:hover {
-      background: #f5f9ff;
-      transform: translateY(-1px);
+      background: rgba(77, 163, 255, 0.08);
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px rgba(77, 163, 255, 0.15);
     }
     
-    /* 🔵 EVERYTHING LINK-RELATED BLUE */
-    
+    /* LINKS */
     .container a,
     .container a:visited {
-      color: #0000EE !important;
+      color: #4da3ff !important;
       text-decoration: none;
       font-weight: 500;
     }
@@ -200,25 +229,20 @@
       text-decoration: underline;
     }
     
-    /* JOURNAL NAME ALSO BLUE */
+    /* JOURNAL NAME */
     .container i {
-      color: #0000EE;
+      color: #b7d7ff;
       font-style: italic;
     }
     
-    /* Conference names (inside .container but NOT links) */
-    .container li i + a i {
-      color: #0000EE; /* journal link stays blue */
-    }
-    
-    /* If conference name is plain <i> before link, reset it */
+    /* RESET ONLY NON-LINK ITALICS */
     .container li > i {
-      color: #111;   /* default black/normal text for conference names */
+      color: #dcdcdc;
     }
     
-    /* AUTHORS CAN STAY BLACK OR MAKE BLUE IF YOU WANT */
+    /* AUTHORS */
     .container b {
-      color: #000;
+      color: #ffffff;
     }
     
     /* REMOVE EXTRA GAP ISSUE */
